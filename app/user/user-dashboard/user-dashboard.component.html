@@ -1,0 +1,94 @@
+<section class="content">
+    <div class="container-fluid">
+  <div class="block-header">
+      <!-- <h2>BASIC FORM ELEMENTS</h2> -->
+  </div>
+<!-- Hover Rows -->
+<div class="row clearfix">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="card">
+    <div class="header headingPadding">
+        <div>
+          <h2>
+              User Mangement                   
+          </h2> 
+        </div> 
+        <ul class="header-dropdown m-r--5">
+            <li class="dropdown">
+                <span class="m-r--5">
+                    <button type="button"   class="btn bg-blue waves-effect" data-target="#createModal" data-toggle="modal">
+                        <i class="material-icons">person_add</i>
+                      Add User
+                    </button>
+                </span>    
+            </li>
+        </ul>
+                  
+    </div>
+    <div class="body table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th> ID</th>
+                    <th>User Name</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>User Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>                      
+              <tr>
+                  <th scope="row"><button type="button"  class="btn btn-default waves-effect" data-target="#viewModal" data-toggle="modal">1</button></th>
+                  <td>johndoe123</td>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@gmail.com</td>
+                  <td>Admin</td>
+                  <td>                            
+                    <button type="button"   class="btn bg-orange-active btn-xs" data-target="#editModal" data-toggle="modal">
+                      <i class="material-icons">
+                        edit
+                      </i>
+                    </button>
+                    <button type="button" class="btn bg-red btn-xs">
+                      <i class="material-icons">
+                        close
+                      </i>
+                    </button>
+                  </td>
+              </tr>
+              <tr>
+                  <th scope="row"><button type="button"   class="btn btn-default waves-effect" data-target="#viewModal" data-toggle="modal">2</button></th>
+                  <td>alexpierce</td>
+                  <td>Alexander</td>
+                  <td>Pierce</td>
+                  <td>alexp@midc.com</td>
+                  <td>Driver</td>
+                  <td>
+                      <button type="button"  class="btn bg-orange-active btn-xs" data-target="#editModal" data-toggle="modal">
+                        <i class="material-icons">
+                          edit
+                        </i>
+                      </button>
+
+                      <button type="button" class="btn bg-red btn-xs">
+                        <i class="material-icons">
+                          close
+                        </i>
+                      </button>
+                  </td>
+              </tr>                        
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+<!-- #END# Hover Rows -->
+</div>
+</section>
+<app-view-user-details></app-view-user-details>
+<app-add-user-details></app-add-user-details>
+<app-edit-user-details></app-edit-user-details>

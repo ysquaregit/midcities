@@ -1,0 +1,108 @@
+<section class="content"><div class="container-fluid">
+    <div class="block-header">
+        <!-- <h2>BASIC FORM ELEMENTS</h2> -->
+    </div>
+<!-- Hover Rows -->
+<div class="row clearfix">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="card">
+      <div class="header headingPadding">
+          <div>
+            <h2>
+                Global Route Rates                 
+            </h2> 
+          </div> 
+          <ul class="header-dropdown m-r--5">
+              
+              <li class="dropdown">
+                    <span class="m-r--5">
+                        <button type="button" class="btn bg-blue waves-effect btn-xs" data-target="#selectmodal" data-toggle="modal">
+                            <i class="material-icons">check</i>
+                            Select Many
+                        </button>
+                    </span>
+                </li>
+                <li class="dropdown">
+                    <span class="m-r--5">
+                        <button type="button" class="btn bg-orange waves-effect btn-xs" data-target="#editselected" data-toggle="modal">
+                            <i class="material-icons">edit</i>
+                            Edit Selected
+                        </button>
+                    </span>
+                </li>
+                <li class="dropdown">
+                        <span class="m-r--5">
+                            <button type="button"   class="btn bg-green waves-effect btn-xs" data-target="#createModal" data-toggle="modal">
+                                <i class="material-icons">add</i>
+                                Create New
+                            </button>
+                        </span>    
+                    </li>
+
+          </ul>
+                    
+      </div>
+      <div class="body table-responsive">
+          <table class="table table-hover">
+              <thead>
+                  <tr>
+                      <th>Pickup</th>
+                      <th>Delivery</th>
+                      <th>Miles</th>
+                      <th>Rate</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>                      
+                <tr>
+                    
+                    <td>Kc</td>
+                    <td>Olathe</td>
+                    <td>50</td>
+                    <td>200$</td>
+                    <td>                            
+                      <button type="button"   class="btn bg-orange-active btn-xs" data-target="#editModal" data-toggle="modal">
+                        <i class="material-icons">
+                          edit
+                        </i>
+                      </button>
+                      <button type="button" class="btn bg-red btn-xs">
+                        <i class="material-icons">
+                          close
+                        </i>
+                      </button>
+                    </td>
+                </tr>
+                <tr>
+                   
+                    <td>St.Joseph</td>
+                    <td>Gardener</td>
+                    <td>100</td>
+                    <td>350$</td>
+                    <td>
+                        <button type="button"  class="btn bg-orange-active btn-xs" data-target="#editModal" data-toggle="modal">
+                          <i class="material-icons">
+                            edit
+                          </i>
+                        </button>
+
+                        <button type="button" class="btn bg-red btn-xs">
+                          <i class="material-icons">
+                            close
+                          </i>
+                        </button>
+                    </td>
+                </tr>                        
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+</div>
+<!-- #END# Hover Rows -->
+</div>
+</section>
+<app-add-driver-details></app-add-driver-details>
+<app-edit-driver-details></app-edit-driver-details>
+<app-select-modal></app-select-modal>
+<app-edit-selected></app-edit-selected>
